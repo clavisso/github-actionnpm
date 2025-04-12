@@ -1,0 +1,13 @@
+{
+    "name": "js-test-tutorial",
+    "version": "1.0.0",
+    "description": "Simple JS test project for GitHub Actions tutorial",
+    "main": "sum.js",
+    "scripts": {
+      "test": "jest"
+    },
+    "devDependencies": {
+      "jest": "^29.0.0"
+    }
+  }
+  
