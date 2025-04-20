@@ -1,13 +1,30 @@
 {
-    "name": "js-test-tutorial",
-    "version": "1.0.0",
-    "description": "Simple JS test project for GitHub Actions tutorial",
-    "main": "sum.js",
-    "scripts": {
-      "test": "jest"
-    },
-    "devDependencies": {
-      "jest": "^29.0.0"
-    }
-  }
-  
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "description": "This is a minimal JavaScript project with Jest testing and GitHub Actions CI setup.",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevTips-Daily/github-action-tutorial-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevTips-Daily/github-action-tutorial-1/issues"
+  },
+  "homepage": "https://github.com/DevTips-Daily/github-action-tutorial-1#readme"
+}
