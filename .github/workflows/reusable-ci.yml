@@ -1,7 +1,7 @@
 name: reusable CI
 
 on:
-  workflow-call:
+  workflow_call:
     inputs: 
     node-version:
       required: true
