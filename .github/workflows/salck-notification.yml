@@ -17,9 +17,9 @@ jobs:
       - name: Slack notify
         uses: slackapi/slack-github-action@v1.24.0
         with:
-          channel-id: C099JQJN9EC
+          channel-id: C08QQ0STKQ8
           payload: |
-           {
+            {
               "text": "${{ job.status == 'success' && ':white_check_mark: *Job Passed!* ✅' || ':x: *Job Failed!* ❌' }}"
             }
         env: 
