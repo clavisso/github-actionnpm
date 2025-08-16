@@ -2,10 +2,12 @@ name: Run Tests
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macOSm4
     steps:
       - uses: actions/checkout@v3
       - name: Run tests

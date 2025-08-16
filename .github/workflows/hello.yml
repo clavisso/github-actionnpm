@@ -2,6 +2,8 @@ name: My First Workflow
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
   build:
