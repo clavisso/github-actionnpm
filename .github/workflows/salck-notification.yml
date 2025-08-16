@@ -19,8 +19,8 @@ jobs:
         with:
           payload:
            {
-            "text": "${{ needs.build.result == 'success' && ':white_check_mark: *Job Passed!* ✅' || ':x: *Job Failed!* ❌' }}"
-           }
+              "text": "${{ needs.build.result == 'success' && ':white_check_mark: *Job Passed!* ✅' || ':x: *Job Failed!* ❌' }}"
+            }
         env: 
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         if: always()
