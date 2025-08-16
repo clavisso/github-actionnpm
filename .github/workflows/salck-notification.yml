@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macOSm4
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
       - name: Run tests
@@ -17,9 +17,9 @@ jobs:
       - name: Slack notify
         uses: slackapi/slack-github-action@v1.24.0
         with:
-          payload:
+          payload: |
            {
-              "text": "${{ needs.build.result == 'success' && ':white_check_mark: *Job Passed!* ✅' || ':x: *Job Failed!* ❌' }}"
+              "text": "${{ job.status == 'success' && ':white_check_mark: *Job Passed!* ✅' || ':x: *Job Failed!* ❌' }}"
             }
         env: 
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
