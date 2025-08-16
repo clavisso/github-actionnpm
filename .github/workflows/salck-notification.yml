@@ -16,8 +16,8 @@ jobs:
           npm test
       - name: Slack notify
         uses: slackapi/slack-github-action@v1.24.0
-        channel: ${{ C099JQJN9EC }}
         with:
+          channel-id: C099JQJN9EC
           payload: |
            {
               "text": "${{ job.status == 'success' && ':white_check_mark: *Job Passed!* ✅' || ':x: *Job Failed!* ❌' }}"
