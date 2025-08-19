@@ -2,8 +2,6 @@ name: Run Tests and slack notify
 
 on:
   push:
-    branches:
-      - main
 
 jobs:
   build:
