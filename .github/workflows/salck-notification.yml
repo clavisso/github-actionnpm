@@ -1,7 +1,7 @@
 name: Run Tests and slack notify
 
 on:
-  push:
+  pull-request:
 
 jobs:
   build:
