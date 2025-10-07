@@ -14,7 +14,7 @@ This is a basic calculator web application built with Node.js and Express, featu
 
 ## 📦 Installation
 
-Clone the repo and install dependencies:
+Clone the repo and install dependencies:.
 
 `git clone https://github.com/your-username/simple-calculator-app.git`
 `cd simple-calculator-app`
